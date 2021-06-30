@@ -87,7 +87,7 @@ public class GraphAlgorithms {
             System.out.println("\n" + v.vertex_num + " : " + v.weight);
         }
 
-
+ываыва
        return result;
 
 
