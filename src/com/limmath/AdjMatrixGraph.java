@@ -22,7 +22,7 @@ public class AdjMatrixGraph implements Graph {
             for (int j = 0; j < count; j++) {
 
                 if ((adjMatrix[i][j] == 0) && (i != j)) {
-                    int weight = random.nextInt(10) + 1;
+                    int weight = random.nextInt(1000) + 1;
                     adjMatrix[i][j] = weight;
                     adjMatrix[j][i] = weight;
                 }
@@ -32,10 +32,10 @@ public class AdjMatrixGraph implements Graph {
 
 
     }
-    AdjMatrixGraph(int count, int[][] matrix) {
+    AdjMatrixGraph( int[][] matrix) {
 
-        this.vertex_count = count;
-        this.edge_count = count * count;
+        this.vertex_count = matrix[0].length;
+        this.edge_count = vertex_count*vertex_count;
         this.adjMatrix = matrix;
 
 
